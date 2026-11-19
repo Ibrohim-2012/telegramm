@@ -1,0 +1,12 @@
+
+> mening-telegramim@0.1.0 lint
+> eslint . --max-warnings 0 && npm run typecheck -w server && npm run typecheck -w web && tsc -p e2e/tsconfig.json --noEmit
+
+
+> server@0.1.0 typecheck
+> tsc -p tsconfig.json --noEmit
+
+
+> web@0.1.0 typecheck
+> tsc --noEmit
+

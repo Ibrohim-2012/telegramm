@@ -1,0 +1,10 @@
+
+Running 5 tests using 1 worker
+
+  ok 1 e2e\voice.spec.ts:7:7 › voice messages › record, send, and the result is a playable Ogg/Opus voice note (8.0s)
+  ok 2 e2e\voice.spec.ts:40:7 › voice messages › trash button and Escape throw the recording away (6.5s)
+  ok 3 e2e\voice.spec.ts:57:7 › voice messages › a recording shorter than a second is not sent (3.7s)
+  ok 4 e2e\voice.spec.ts:68:7 › round video messages › camera button opens the recorder; record, send, and the bubble-less circle plays (6.4s)
+  ok 5 e2e\voice.spec.ts:98:7 › round video messages › cancel and Escape close the recorder without sending (3.3s)
+
+  5 passed (1.4m)

@@ -1,0 +1,185 @@
+
+> mening-telegramim@0.1.0 test
+> npm run test -w server && npm run test -w web
+
+
+> server@0.1.0 test
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/ASUS/AppData/Roaming/Claude/scratch-workspaces/fdabff4d-1c06-4d6a-85d1-19bb4e76d5ec/fada1acb-c6ac-4716-b370-abf185bd1792/scratch-2026-11-05-ec1543/server[39m
+
+ [32m✓[39m test/mock.test.ts [2m([22m[2m19 tests[22m[2m)[22m[90m 58[2mms[22m[39m
+ [32m✓[39m test/real.test.ts [2m([22m[2m23 tests[22m[2m)[22m[33m 1746[2mms[22m[39m
+ [32m✓[39m test/social.test.ts [2m([22m[2m9 tests[22m[2m)[22m[33m 510[2mms[22m[39m
+ [32m✓[39m test/accounts.test.ts [2m([22m[2m9 tests[22m[2m)[22m[33m 507[2mms[22m[39m
+   [33m[2m✓[22m[39m accounts API[2m > [22mlists, adds, switches and cancels [33m368[2mms[22m[39m
+ [32m✓[39m test/polish.test.ts [2m([22m[2m11 tests[22m[2m)[22m[33m 543[2mms[22m[39m
+ [32m✓[39m test/access.test.ts [2m([22m[2m7 tests[22m[2m)[22m[33m 349[2mms[22m[39m
+ [32m✓[39m test/api.test.ts [2m([22m[2m16 tests[22m[2m)[22m[33m 1198[2mms[22m[39m
+ [32m✓[39m test/premium.test.ts [2m([22m[2m19 tests[22m[2m)[22m[33m 1221[2mms[22m[39m
+   [33m[2m✓[22m[39m Premium API[2m > [22mreports status, price, limits; trial once; codes; settings [33m314[2mms[22m[39m
+ [32m✓[39m test/live.test.ts [2m([22m[2m6 tests[22m[2m)[22m[90m 145[2mms[22m[39m
+ [32m✓[39m test/fidelity.test.ts [2m([22m[2m7 tests[22m[2m)[22m[33m 647[2mms[22m[39m
+ [32m✓[39m test/lock.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 699[2mms[22m[39m
+   [33m[2m✓[22m[39m single server per Telegram session[2m > [22mrefuses to start next to a live server [33m616[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m      Tests [22m [1m[32m129 passed[39m[22m[90m (129)[39m
+[2m   Start at [22m 21:53:39
+[2m   Duration [22m 6.59s[2m (transform 5.85s, setup 0ms, collect 22.11s, tests 7.62s, environment 3ms, prepare 6.66s)[22m
+
+
+> web@0.1.0 test
+> vitest run
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/ASUS/AppData/Roaming/Claude/scratch-workspaces/fdabff4d-1c06-4d6a-85d1-19bb4e76d5ec/fada1acb-c6ac-4716-b370-abf185bd1792/scratch-2026-11-05-ec1543/web[39m
+
+ [32m✓[39m test/richtext.test.ts [2m([22m[2m6 tests[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m test/ogg.test.ts [2m([22m[2m5 tests[22m[2m)[22m[90m 34[2mms[22m[39m
+ [32m✓[39m test/media.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m test/polish.test.ts [2m([22m[2m6 tests[22m[2m)[22m[90m 10[2mms[22m[39m
+[90mstderr[2m | test/social.test.ts[2m > [22m[2mdrafts store[2m > [22m[2mstores, clears on empty, and caps the size
+[22m[39m[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+[zustand persist middleware] Unable to update item 'mt-drafts', the given storage is currently unavailable.
+
+ [32m✓[39m test/social.test.ts [2m([22m[2m7 tests[22m[2m)[22m[90m 63[2mms[22m[39m
+ [32m✓[39m test/lib.test.ts [2m([22m[2m9 tests[22m[2m)[22m[90m 9[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m36 passed[39m[22m[90m (36)[39m
+[2m   Start at [22m 21:53:47
+[2m   Duration [22m 1.28s[2m (transform 568ms, setup 0ms, collect 1.67s, tests 133ms, environment 2ms, prepare 1.53s)[22m
+

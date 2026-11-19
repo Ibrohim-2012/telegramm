@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Telegram-like palette: light ---- */
+:root {
+  --bg: 255 255 255;
+  --surface: 255 255 255;
+  --raised: 244 244 245; /* #f4f4f5 hover / inputs */
+  --ink: 0 0 0;
+  --muted: 112 117 121; /* #707579 */
+  --line: 223 225 229; /* #dfe1e5 */
+  --accent: 51 144 236; /* #3390ec */
+  --badge: 196 201 204; /* #c4c9cc muted unread */
+  --badge-on: 79 174 78; /* #4fae4e unread */
+  --accent-ink: 255 255 255;
+  --danger: 220 53 69;
+  --ok: 34 160 90;
+
+  --bubble-out: 238 255 222;
+  --bubble-out-ink: 0 0 0;
+  --bubble-in: 255 255 255;
+  --bubble-in-ink: 0 0 0;
+  --out-meta: 79 174 78;
+  --in-meta: 112 117 121;
+  --link: var(--accent);
+  --out-link: 51 144 236;
+
+  --wp-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240' fill='none' stroke='white' stroke-opacity='0.33' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 40 60 22 48 58 38 46Z M38 46 60 22'/%3E%3Cpath d='M150 62C128 48 132 30 146 32 152 33 154 38 156 40 158 38 160 33 166 32 180 30 184 48 162 62Z'/%3E%3Cpath d='M80 108 86 124 103 125 90 136 94 153 80 144 66 153 70 136 57 125 74 124Z'/%3E%3Ccircle cx='190' cy='150' r='10'/%3E%3Cpath d='M200 214V200M193 207H207'/%3E%3Cpath d='M22 204a10 10 0 0 1 4-19 14 14 0 0 1 27-3 10 10 0 0 1 3 22Z'/%3E%3Cpath d='M128 214V188L150 182V208'/%3E%3Cellipse cx='123' cy='214' rx='5' ry='4'/%3E%3Cellipse cx='145' cy='208' rx='5' ry='4'/%3E%3Cpath d='M205 30 213 46 230 48 218 60 221 77 205 69 189 77 192 60 180 48 197 46Z'/%3E%3Ccircle cx='100' cy='60' r='4'/%3E%3Ccircle cx='20' cy='120' r='4'/%3E%3Ccircle cx='170' cy='105' r='3'/%3E%3C/svg%3E");
+  --wp-grad: linear-gradient(135deg, #dbddbb 0%, #6ba587 40%, #d5d88d 72%, #88b884 100%);
+}
+.dark {
+  --bg: 33 33 33; /* #212121 */
+  --surface: 33 33 33;
+  --raised: 44 44 44; /* #2c2c2c hover */
+  --ink: 255 255 255;
+  --muted: 170 170 170; /* #aaaaaa */
+  --line: 15 15 15; /* #0f0f0f */
+  --accent: 135 116 225; /* #8774e1 */
+  --badge: 112 117 121;
+  --badge-on: 135 116 225;
+  --accent-ink: 255 255 255;
+  --danger: 255 107 107;
+  --ok: 80 200 130;
+
+  --bubble-out: 135 116 225;
+  --bubble-out-ink: 255 255 255;
+  --bubble-in: 33 33 33;
+  --bubble-in-ink: 255 255 255;
+  --out-meta: 235 232 255;
+  --in-meta: 170 170 170;
+  --out-link: 255 255 255;
+
+  --wp-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240' fill='none' stroke='white' stroke-opacity='0.06' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 40 60 22 48 58 38 46Z M38 46 60 22'/%3E%3Cpath d='M150 62C128 48 132 30 146 32 152 33 154 38 156 40 158 38 160 33 166 32 180 30 184 48 162 62Z'/%3E%3Cpath d='M80 108 86 124 103 125 90 136 94 153 80 144 66 153 70 136 57 125 74 124Z'/%3E%3Ccircle cx='190' cy='150' r='10'/%3E%3Cpath d='M200 214V200M193 207H207'/%3E%3Cpath d='M22 204a10 10 0 0 1 4-19 14 14 0 0 1 27-3 10 10 0 0 1 3 22Z'/%3E%3Cpath d='M128 214V188L150 182V208'/%3E%3Cellipse cx='123' cy='214' rx='5' ry='4'/%3E%3Cellipse cx='145' cy='208' rx='5' ry='4'/%3E%3Cpath d='M205 30 213 46 230 48 218 60 221 77 205 69 189 77 192 60 180 48 197 46Z'/%3E%3Ccircle cx='100' cy='60' r='4'/%3E%3Ccircle cx='20' cy='120' r='4'/%3E%3Ccircle cx='170' cy='105' r='3'/%3E%3C/svg%3E");
+  --wp-grad: linear-gradient(135deg, #1b1f2e 0%, #2b2147 50%, #16222f 100%);
+}
+
+/* ---- chat wallpapers (chosen in Settings; swatches reuse the same data-wp attribute) ---- */
+[data-wp="sky"] { --wp-grad: linear-gradient(160deg, #c6e2f7 0%, #8ec5f0 50%, #dfeffc 100%); }
+[data-wp="mint"] { --wp-grad: linear-gradient(160deg, #d3f0e2 0%, #9fd8c0 50%, #e6f7ee 100%); }
+[data-wp="sunset"] { --wp-grad: linear-gradient(160deg, #ffd9c7 0%, #f7a8b8 50%, #c9b6f0 100%); }
+[data-wp="violet"] { --wp-grad: linear-gradient(160deg, #e3d9ff 0%, #b9a7f5 50%, #d9ecff 100%); }
+[data-wp="plain"] { --wp-grad: linear-gradient(#eef0f2, #eef0f2); --wp-pattern: none; }
+.dark[data-wp="sky"], .dark [data-wp="sky"] { --wp-grad: linear-gradient(160deg, #0d1b2a 0%, #1b3a5c 60%, #10202f 100%); }
+.dark[data-wp="mint"], .dark [data-wp="mint"] { --wp-grad: linear-gradient(160deg, #10231d 0%, #1f4a3b 60%, #112922 100%); }
+.dark[data-wp="sunset"], .dark [data-wp="sunset"] { --wp-grad: linear-gradient(160deg, #2a1530 0%, #4a2250 55%, #1d2a4a 100%); }
+.dark[data-wp="violet"], .dark [data-wp="violet"] { --wp-grad: linear-gradient(160deg, #161129 0%, #2e2457 60%, #1a1f3d 100%); }
+.dark[data-wp="plain"], .dark [data-wp="plain"] { --wp-grad: linear-gradient(#0f0f0f, #0f0f0f); --wp-pattern: none; }
+
+html { height: 100%; }
+body {
+  height: 100%;
+  height: 100dvh;
+  background: rgb(var(--bg));
+  color: rgb(var(--ink));
+  font-family: theme('fontFamily.sans');
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+::selection { background: rgb(var(--accent) / .3); }
+input, textarea { caret-color: rgb(var(--accent)); }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+
+/* 200ms colour cross-fade when the theme flips */
+.theme-fade, .theme-fade *, .theme-fade *::before, .theme-fade *::after {
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease, fill .2s ease, stroke .2s ease !important;
+}
+
+*:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 2px; border-radius: 6px; }
+
+.scroll-thin { scrollbar-width: thin; scrollbar-color: transparent transparent; }
+.scroll-thin:hover { scrollbar-color: rgb(var(--muted) / .45) transparent; }
+.scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+.scroll-thin::-webkit-scrollbar-track { background: transparent; }
+.scroll-thin::-webkit-scrollbar-thumb { background: transparent; border-radius: 6px; }
+.scroll-thin:hover::-webkit-scrollbar-thumb { background: rgb(var(--muted) / .45); }
+
+.skeleton { position: relative; overflow: hidden; background: rgb(var(--muted) / .15); border-radius: 8px; }
+.skeleton::after {
+  content: ''; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgb(var(--surface) / .55), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+.wallpaper {
+  background-color: rgb(var(--bg));
+  background-image: var(--wp-pattern), var(--wp-grad);
+  background-size: 240px 240px, cover;
+  background-attachment: local, local;
+}
+
+/* ---- message bubbles with Telegram-style tails ---- */
+.bubble { position: relative; box-shadow: 0 1px 1px rgb(0 0 0 / .12); }
+.bubble-out { background: rgb(var(--bubble-out)); color: rgb(var(--bubble-out-ink)); --meta: var(--out-meta); --link: var(--out-link); --quote: var(--out-meta); }
+.bubble-in { background: rgb(var(--bubble-in)); color: rgb(var(--bubble-in-ink)); --meta: var(--in-meta); --quote: var(--accent); }
+.quote { border-left: 3px solid rgb(var(--quote, var(--accent))); background: rgb(var(--quote, var(--accent)) / .12); }
+.quote-name { color: rgb(var(--quote, var(--accent))); }
+.msg-meta { color: rgb(var(--meta, var(--muted))); }
+.rt-link { color: rgb(var(--link)); text-underline-offset: 2px; }
+.rt-link:hover { text-decoration: underline; }
+.bubble-out .rt-link { text-decoration: underline; }
+.rt-code { background: rgb(0 0 0 / .08); }
+.dark .rt-code { background: rgb(255 255 255 / .12); }
+.tail::after {
+  content: ''; position: absolute; bottom: 0; width: 11px; height: 15px;
+  clip-path: path('M0 0V15h11C5 14 1 9 0 0Z');
+}
+.tail-out::after { right: -8px; background: rgb(var(--bubble-out)); }
+.tail-in::after { left: -8px; transform: scaleX(-1); background: rgb(var(--bubble-in)); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* notch / home-indicator safe areas on phones */
+.pb-safe { padding-bottom: max(0.5rem, env(safe-area-inset-bottom)); }
+.pt-safe { padding-top: env(safe-area-inset-top); }
+
+/* ---- material-style ripple (spans are injected by the delegate in Providers) ---- */
+[data-ripple] { overflow: hidden; -webkit-tap-highlight-color: transparent; }
+[data-ripple]:not(.absolute):not(.fixed):not(.sticky) { position: relative; } /* keep explicit positioning (e.g. the pencil button) */
+.ripple {
+  position: absolute; border-radius: 50%; pointer-events: none; background: currentColor; opacity: .14;
+  transform: scale(0); animation: ripple .55s ease-out forwards;
+}
+@keyframes ripple { to { transform: scale(1); opacity: 0; } }
+
+/* ---- animated "typing..." dots ---- */
+.typing-dots { display: inline-flex; gap: 2px; margin-left: 3px; vertical-align: baseline; }
+.typing-dots i { width: 3px; height: 3px; border-radius: 50%; background: currentColor; animation: typing 1.2s infinite; }
+.typing-dots i:nth-child(2) { animation-delay: .18s; }
+.typing-dots i:nth-child(3) { animation-delay: .36s; }
+@keyframes typing { 0%, 60%, 100% { opacity: .3; transform: translateY(0); } 30% { opacity: 1; transform: translateY(-2px); } }
+
+@media (prefers-reduced-motion: reduce) { .ripple { display: none; } .typing-dots i { animation: none; opacity: .7; } }
+
+/* very slow drift of the wallpaper gradient inside the open chat */
+.wallpaper-drift { background-size: 240px 240px, 220% 220%; animation: wpdrift 60s ease-in-out infinite alternate; }
+@keyframes wpdrift { from { background-position: 0 0, 0% 30%; } to { background-position: 0 0, 100% 70%; } }
+@media (prefers-reduced-motion: reduce) { .wallpaper-drift { animation: none; } }
+
+/* ---- premium wallpapers ---- */
+[data-wp="aurora"] { --wp-grad: linear-gradient(150deg, #a8edea 0%, #7ee8c7 28%, #8fb8ff 62%, #d4a5ff 100%); }
+[data-wp="galaxy"] { --wp-grad: radial-gradient(circle at 20% 15%, #7a5cff 0%, transparent 45%), radial-gradient(circle at 85% 80%, #ff5fa2 0%, transparent 40%), linear-gradient(160deg, #cfd6ff, #e9d7ff); }
+[data-wp="gold"] { --wp-grad: linear-gradient(145deg, #fff3c4 0%, #f7d77a 45%, #e9b949 100%); }
+.dark[data-wp="aurora"], .dark [data-wp="aurora"] { --wp-grad: linear-gradient(150deg, #0b2a33 0%, #0f4d4a 30%, #1c3f7a 65%, #4b2a7b 100%); }
+.dark[data-wp="galaxy"], .dark [data-wp="galaxy"] { --wp-grad: radial-gradient(circle at 20% 15%, #4b2fb8 0%, transparent 50%), radial-gradient(circle at 85% 80%, #a3145e 0%, transparent 45%), linear-gradient(160deg, #0d0a24, #1b1038); }
+.dark[data-wp="gold"], .dark [data-wp="gold"] { --wp-grad: linear-gradient(145deg, #2b2205 0%, #5a4410 50%, #8a6a1a 100%); }
+
+/* ---- premium accent colours (light | dark); blue / purple stay the defaults ---- */
+html[data-accent="green"] { --accent: 56 142 60; --out-link: 56 142 60; }
+html[data-accent="pink"] { --accent: 216 27 96; --out-link: 216 27 96; }
+html[data-accent="orange"] { --accent: 214 90 0; --out-link: 214 90 0; }
+html[data-accent="teal"] { --accent: 0 131 143; --out-link: 0 131 143; }
+html[data-accent="violet"] { --accent: 103 58 183; --out-link: 103 58 183; }
+html.dark[data-accent="green"] { --accent: 102 187 106; --bubble-out: 46 125 50; --badge-on: 102 187 106; --out-link: 255 255 255; }
+html.dark[data-accent="pink"] { --accent: 240 98 146; --bubble-out: 194 24 91; --badge-on: 240 98 146; --out-link: 255 255 255; }
+html.dark[data-accent="orange"] { --accent: 255 167 38; --bubble-out: 230 81 0; --badge-on: 255 167 38; --accent-ink: 20 10 0; --out-link: 255 255 255; }
+html.dark[data-accent="teal"] { --accent: 38 198 218; --bubble-out: 0 121 135; --badge-on: 38 198 218; --accent-ink: 0 20 24; --out-link: 255 255 255; }
+html.dark[data-accent="violet"] { --accent: 179 136 255; --bubble-out: 94 53 177; --badge-on: 179 136 255; --accent-ink: 15 5 40; --out-link: 255 255 255; }

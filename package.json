@@ -1,0 +1,31 @@
+{
+  "name": "mening-telegramim",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,magenta \"cross-env PORT=4000 npm run dev -w server\" \"npm run dev -w web\"",
+    "build": "npm run build -w server && npm run build -w web",
+    "lint": "eslint . --max-warnings 0 && npm run typecheck -w server && npm run typecheck -w web && tsc -p e2e/tsconfig.json --noEmit",
+    "test": "npm run test -w server && npm run test -w web",
+    "doctor": "npm run doctor -w server",
+    "live": "npm run live -w server --",
+    "e2e": "playwright test",
+    "screens": "cross-env SCREENS=1 playwright test e2e/screens.spec.ts --reporter=line",
+    "premium:code": "npm run premium:code -w server --"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@next/eslint-plugin-next": "^16.4.5",
+    "@playwright/test": "^1.64.1",
+    "concurrently": "^9.1.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "typescript-eslint": "^8.72.1"
+  }
+}

@@ -1,0 +1,47 @@
+
+> mening-telegramim@0.1.0 dev
+> concurrently -n server,web -c blue,magenta "npm run dev -w server" "npm run dev -w web"
+
+[web] 
+[web] > web@0.1.0 dev
+[web] > next dev -p 3000
+[web] 
+[server] 
+[server] > server@0.1.0 dev
+[server] > tsx watch src/index.ts
+[server] 
+[web]    ▲ Next.js 15.5.29
+[web]    - Local:        http://localhost:3000
+[web]    - Network:      http://192.168.100.116:3000
+[web] 
+[web]  ✓ Starting...
+[web]  ✓ Ready in 7.6s
+[web]  ○ Compiling / ...
+[server] {"level":"info","time":"2026-11-06T06:31:54.756Z","msg":"server started","port":4000,"mode":"real"}
+[server] [33m[2026-11-06T11:31:55.066] [INFO] - [Running gramJS version 2.26.21][0m
+[server] {"level":"info","time":"2026-11-06T06:31:55.615Z","msg":"session restored"}
+[web]  ✓ Compiled / in 29.3s (857 modules)
+[web]  GET / 200 in 30999ms
+[web]  GET / 200 in 4145ms
+[web]  ○ Compiling /icon.svg ...
+[server] {"level":"info","time":"2026-11-06T06:32:17.457Z","msg":"socket connected","id":"AagOTeN2JJJMxu2PAAAA"}
+[web]  ✓ Compiled /icon.svg in 1049ms (521 modules)
+[web]  GET /icon.svg?1e3b6b33dd09028f 200 in 1727ms
+[web]  GET / 200 in 755ms
+[server] {"level":"info","time":"2026-11-06T06:32:51.949Z","msg":"socket connected","id":"XT2k4_y6goajT-wcAAAB"}
+[server] {"level":"info","time":"2026-11-06T06:42:20.507Z","msg":"socket disconnected","id":"AagOTeN2JJJMxu2PAAAA"}
+[web]  GET / 200 in 218ms
+[server] {"level":"info","time":"2026-11-06T06:42:27.751Z","msg":"socket connected","id":"0f5fG_2KnwgWZ2juAAAC"}
+[server] {"level":"info","time":"2026-11-06T06:42:44.783Z","msg":"logged out"}
+[server] {"level":"info","time":"2026-11-06T06:42:44.808Z","msg":"socket disconnected","id":"0f5fG_2KnwgWZ2juAAAC"}
+[server] [33m[2026-11-06T11:42:48.648] [INFO] - [Running gramJS version 2.26.21][0m
+[server] {"level":"info","time":"2026-11-06T06:42:52.931Z","msg":"code sent"}
+[server] {"level":"info","time":"2026-11-06T06:43:06.218Z","msg":"login ok"}
+[server] {"level":"info","time":"2026-11-06T06:43:06.296Z","msg":"socket connected","id":"vJim1Cop18t8_WExAAAD"}
+[server] {"level":"info","time":"2026-11-06T06:43:54.096Z","msg":"socket disconnected","id":"vJim1Cop18t8_WExAAAD"}
+[server] [33m[2026-11-06T11:45:11.475] [INFO] - [Running gramJS version 2.26.21][0m
+[web]  GET / 200 in 235ms
+[server] {"level":"info","time":"2026-11-06T06:46:29.203Z","msg":"code sent"}
+[server] {"level":"info","time":"2026-11-06T06:46:51.947Z","msg":"login ok"}
+[server] {"level":"info","time":"2026-11-06T06:46:52.067Z","msg":"socket connected","id":"pjHbgIEPPCFJaRVpAAAE"}
+[server] {"level":"info","time":"2026-11-06T06:56:44.974Z","msg":"socket disconnected","id":"pjHbgIEPPCFJaRVpAAAE"}

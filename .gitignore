@@ -1,0 +1,11 @@
+node_modules
+.next
+.next-e2e
+dist
+.env
+data/
+*.session
+*.tsbuildinfo
+
+playwright-report/
+test-results/
